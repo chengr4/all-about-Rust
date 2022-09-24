@@ -25,3 +25,7 @@ cargo run
 cargo build
 cargo build --release
 ```
+
+## Researchable Resources
+
+- https://github.com/tbillington/rust_serverless_runtime
