@@ -34,6 +34,7 @@ cargo build --release
 > unsigned: > 0
 
 - `usize`, `isize`: size depending on the computer (eg 64 bits)
+- Get max `u32`: `u32::MAX`
 
 ## Researchable Resources
 

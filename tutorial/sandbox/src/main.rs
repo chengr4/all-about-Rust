@@ -16,11 +16,14 @@ fn main() {
     println!("Hello {} {}", name.trim_end(), greeting);
 
     // variable
-    // > 0
+    // unsigned: > 0
     const ONE: u16 = 1;
     const ONE_MIL: u32 = 1_000_000;
     // shadowing
     let age = "47";
     let mut age: u32 = age.trim().parse().expect("msg");
+
+    
+
 
 }
