@@ -1,6 +1,9 @@
 # All about Rust
 
 - package manager: cargo
+- Common indent: 4 spaces
+- print line is called "marco" (see by exclamation)
+- shadowing: Define a variable with same name but different data types 
 
 Compile code:
 
@@ -25,6 +28,12 @@ cargo run
 cargo build
 cargo build --release
 ```
+
+## Variables
+
+> unsigned: > 0
+
+- `usize`, `isize`: size depending on the computer (eg 64 bits)
 
 ## Researchable Resources
 
