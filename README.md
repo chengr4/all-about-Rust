@@ -5,6 +5,8 @@
 - print line is called "marco" (see by exclamation)
 - shadowing: Define a variable with same name but different data types 
 
+- [Loop](./loop/)
+
 Compile code:
 
 ```
