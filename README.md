@@ -38,6 +38,54 @@ cargo build --release
 - `usize`, `isize`: size depending on the computer (eg 64 bits)
 - Get max `u32`: `u32::MAX`
 
+## Conditions
+
+```rust
+fn main() {
+    let age: i32 = 8;
+    if (age >= 1) && (age <= 18) {
+      println!();
+    } else if (age == 21) || (age == 21) {
+
+    } else {
+
+    }
+}
+```
+
+```rust
+let mut my_age = 47;
+let can_vote = if my_age >= 18 {
+  true
+} else {
+
+}
+```
+
+match:
+
+```rust
+let age = 8;
+match age2 {
+  // range 1 to 18
+  1..=18 => printIn!(),
+  21 | 50 => printIn!(),
+  62..=i32::MAX => printIn!(),
+  // default case
+  _ => printIn!(),
+};
+
+use std::cmp::Ordering
+
+let my_age = 18;
+let voting_age = 18;
+match my_age.cmp(&voting_age){
+  Ordering::Less => printIn!(),
+  Ordering::Greater => printIn!(),
+  Ordering::Equal => printIn!(),
+};
+```
+
 ## Researchable Resources
 
 - https://github.com/tbillington/rust_serverless_runtime
