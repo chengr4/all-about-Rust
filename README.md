@@ -6,6 +6,8 @@
 - shadowing: Define a variable with same name but different data types 
 
 - [Loop](./loop/)
+- [Variable](./variable/)
+- [Array](./array/)
 
 Compile code:
 
@@ -30,13 +32,6 @@ cargo run
 cargo build
 cargo build --release
 ```
-
-## Variables
-
-> unsigned: > 0
-
-- `usize`, `isize`: size depending on the computer (eg 64 bits)
-- Get max `u32`: `u32::MAX`
 
 ## Conditions
 
