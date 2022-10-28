@@ -14,6 +14,13 @@
     let (v1, v2, v3) = my_tuple;
 ```
 
+## str
+
+- string slice
+- Usually seen in its **borrowed** form, `&str`
+- It is also the type of string literals, `&'static str` (?)
+- String slices are always valid `UTF-8`
+
 ## String
 
 ```rust
