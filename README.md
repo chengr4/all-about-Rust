@@ -1,9 +1,12 @@
 # All about Rust
 
-- package manager: cargo
+- Core: traits and safe access to data
+- Package manager: cargo
 - Common indent: 4 spaces
-- print line is called "marco" (see by exclamation)
-- shadowing: Define a variable with same name but different data types 
+- Print line is called "marco" (see by exclamation)
+- Shadowing: Define a variable with same name but different data types 
+
+---
 
 - [Loop](./loop/)
 - [Variable](./variable/)
