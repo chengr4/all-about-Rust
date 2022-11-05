@@ -1,5 +1,8 @@
 # Variable
 
+- [推側] Literal value 不會進 stack or heap ，在載入執行檔時，他就會存在在 RAM 某個地方， eg `let x` 會協助指向 memory
+  > So literal value lifetime is `'static`
+
 ## Number
 
 > unsigned: > 0
