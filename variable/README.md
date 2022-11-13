@@ -34,6 +34,17 @@
 
     }
     let str2 = str1.replace("A", "Another");
+
+    let str4: &str = "Random string";
+    let mut str5: String = str4.to_string();
+    let byte_arr1 = st5.as_bytes();
+    let str6 = &st5[0..6];
+    str6.len(); // 6
+    str5.clear();
+    let str7 = String::from("apple");
+    let str8 = String::from("banana");
+    // str7 will be deleted
+    let str9 = str7 + &str8
 ```
 
 ## Vector
@@ -47,15 +58,4 @@ v1.dedup();
 for char in v1 {
 
 }
-let str4: &str = "Random string";
-let mut str5: Sring = str4.to_string();
-ley byye_arr1 = st5.as_bytes();
-let str6 = &st5[0..6];
-str6.len(); // 6
-str5.clear();
-let str7 = String::from("apple");
-let str8 = String::from("banana");
-// str7 will be deleted
-let str9 = str7 + &str8
-
 ```
