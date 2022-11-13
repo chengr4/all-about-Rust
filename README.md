@@ -12,6 +12,7 @@
 - [Variable](./variable/)
 - [Array](./array/)
 - [Memory](./memory/)
+- [Struct](./struct/)
 
 Compile code:
 
