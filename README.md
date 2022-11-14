@@ -90,3 +90,4 @@ match my_age.cmp(&voting_age){
 
 - https://github.com/tbillington/rust_serverless_runtime
 - [fuzzing(?)](https://github.com/gamozolabs)
+- https://github.com/cccriscv/mini-riscv-os
