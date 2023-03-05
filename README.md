@@ -93,3 +93,5 @@ match my_age.cmp(&voting_age){
 - [fuzzing(?)](https://github.com/gamozolabs)
 - https://github.com/cccriscv/mini-riscv-os
 - [Mara Bos; Rust Atomics and Locks](https://marabos.nl/atomics/?fbclid=IwAR0MNn1M8Sty_Pqv2ONLpqX2lL-57d-QGTGGZwYEG0z2E5yO2DlY0_KGFdU)
+- [https://doc.rust-lang.org/stable/book/](The Rust Programming Language)
+- [https://rust-lang.tw/book-tw/title-page.html](Rust 程式設計語言)
