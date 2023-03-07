@@ -13,6 +13,7 @@
 - [Array](./array/)
 - [Memory](./memory/)
 - [Struct](./struct/)
+- [Closure]()
 - [Q/A](./qa/)
 
 Compile code:
