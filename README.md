@@ -13,7 +13,8 @@
 - [Array](./array/)
 - [Memory](./memory/)
 - [Struct](./struct/)
-- [Closure]()
+- [Closure](./closure/)
+- [Enum and Option](./enum-and-option/)
 - [Q/A](./qa/)
 
 Compile code:
