@@ -8,10 +8,11 @@
 
 ---
 
+- [String](./string/)
 - [Loop](./loop/)
 - [Variable](./variable/)
 - [Array](./array/)
-- [Memory](./memory/)
+- [Memory and OwnerShip](./memory-and-ownership/)
 - [Struct](./struct/)
 - [Closure](./closure/)
 - [Enum and Option](./enum-and-option/)
