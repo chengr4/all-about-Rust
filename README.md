@@ -16,11 +16,12 @@
 - [Struct](./struct/)
 - [Closure](./closure/)
 - [Enum and Option](./enum-and-option/)
+- [Generics](./generics/)
 - [Q/A](./qa/)
 
 Compile code:
 
-```
+```sh
 rustc <file_name>
 ```
 
@@ -28,7 +29,7 @@ rustc <file_name>
 
 Create project:
 
-```
+```sh
 cargo new <folder_name>
 or
 cargo init
@@ -36,7 +37,8 @@ cargo init
 
 Compile code:
 
-```
+```sh
+cargo r
 cargo run
 cargo build
 cargo build --release
