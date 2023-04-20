@@ -2,6 +2,8 @@
 
 - 如果你發現你的程式碼需要使用大量泛型的話，這通常代表你的程式碼需要重新組織成更小的元件
 - 當你的程式碼有許多 `struct` 或 `enum` 都「只有」儲存的值不同時，你可以使用 generic type 來避免重複
+- Using generic types won't make your program run any slower than it would with concrete types
+  > 藉由 monomorphization 能讓 generic 程式碼在編譯時填入實際的 type，因此不會降低效能
 
 ## In Struct Definitions
 
