@@ -17,7 +17,7 @@
 - [Closure](./closure/)
 - [Enum and Option](./enum-and-option/)
 - [Generics](./generics/)
-- [Traits]()
+- [Traits](./trait/)
 - [Q/A](./qa/)
 
 Compile code:
