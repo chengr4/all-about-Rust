@@ -50,3 +50,9 @@ fn main() {
     println!("p.x = {}", p.x());
 }
 ```
+
+## Lifetimes
+
+Lifetimes are another kind of generic
+
+The main aim of lifetimes is to prevent `dangling references (迷途參考)`, which cause a program to reference data other than the data it’s intended to reference.
