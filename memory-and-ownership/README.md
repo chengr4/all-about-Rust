@@ -2,6 +2,7 @@
 
 - 當變數離開 scope 時，Rust 會幫我們呼叫一個特殊函式。此函式叫做 `drop`
 - Passing in references as function parameters is called **borrowing**
+- The concepts of ownership, borrowing, and slices ensure memory safety in Rust programs at compile time.
 
 ## Ownership
 
@@ -73,6 +74,22 @@ fn main() {
 fn change(some_string: &mut String) {
     some_string.push_str(", world");
 }
+```
+
+## The Slice type
+
+- Slices let you reference a contiguous sequence of elements in a collection
+- Type: `&str`
+    > &str 是個不可變參考
+
+```rust
+let s = String::from("hello");
+
+let len = s.len();
+
+// take a slice of the entire string
+let slice = &s[0..len];
+let slice = &s[..];
 ```
 
 ---
