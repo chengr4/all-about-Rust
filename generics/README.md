@@ -56,3 +56,7 @@ fn main() {
 Lifetimes are another kind of generic
 
 The main aim of lifetimes is to prevent `dangling references (迷途參考)`, which cause a program to reference data other than the data it’s intended to reference.
+
+### Why We Need?
+
+When we’re defining this function, we don’t know the concrete values that will be passed into this function. We also don’t know the concrete lifetimes of the references that will be passed in.
