@@ -1,5 +1,7 @@
 # Struct
 
+- [Lifetime Annotations in Struct Definitions](../generics/README.md#lifetime-annotations-in-struct-definitions)
+
 ```rust
 // basic usage
 struct User {
