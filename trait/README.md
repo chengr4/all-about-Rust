@@ -27,3 +27,28 @@ pub trait Summary {
     }
 }
 ```
+
+## Trait Bound
+
+We can use trait bounds to specify that a generic type can be any type that has certain behavior.
+
+Eg:
+
+```rust
+// `impl Summary` is a trait bound
+pub fn notify(item: &impl Summary) {
+    println!("頭條新聞！{}", item.summarize());
+}
+
+// <T: Summary>(item: &T) is a formal trait bound
+pub fn notify<T: Summary>(item: &T) {
+    println!("頭條新聞！{}", item.summarize());
+}
+
+// or use where
+fn some_function<T, U>(t: &T, u: &U) -> i32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{
+```
