@@ -18,6 +18,7 @@
 - [Enum and Option](./enum-and-option/)
 - [Generics](./generics/)
 - [Traits](./trait/)
+- [Lifretimes](./lifetimes/)
 - [Q/A](./qa/)
 
 Compile code:
