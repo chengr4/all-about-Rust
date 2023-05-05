@@ -2,11 +2,11 @@
 
 Lifetimes are another kind of generic
 
+## Why we need?
+
 The main aim of lifetimes is to prevent `dangling references (迷途參考)`, which cause a program to reference data other than the data it’s intended to reference.
 
-**Why we need?**
-
-When we’re defining this function, we don’t know the concrete values that will be passed into this function. We also don’t know the concrete lifetimes of the references that will be passed in.
+When we’re defining a function, we don’t know the concrete values that will be passed into the function. We also don’t know the concrete lifetimes of the references that will be passed in.
 
 One lifetime annotation by itself doesn’t have much meaning, because the annotations are meant to tell Rust **how generic lifetime parameters of multiple references relate to each other.**
 
@@ -63,3 +63,6 @@ Three rules by the compiler:
 3. 如果有多個輸入生命週期參數，但其中一個是 `&self` 或 `&mut self`，由於這是 method，`self` 的生命週期會賦值給**所有**輸出生命週期參數。此規則讓 method 更容易讀寫，因為不用寫更多符號出來。
 
 ## The Static Lifetime
+
+- aka. `'static` => 讓 reference 可以存活在整個程式期間， eg, All string literals
+
