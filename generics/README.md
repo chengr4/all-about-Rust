@@ -4,6 +4,7 @@
 - 當你的程式碼有許多 `struct` 或 `enum` 都「只有」儲存的值不同時，你可以使用 generic type 來避免重複
 - Using generic types won't make your program run any slower than it would with concrete types
   > 藉由 monomorphization 能讓 generic 程式碼在編譯時填入實際的 type，因此不會降低效能
+- [Lifetimes](../lifetimes/) are another kind of generic
 
 ## In Struct Definitions
 
