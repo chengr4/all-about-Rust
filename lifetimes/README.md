@@ -65,4 +65,5 @@ Three rules by the compiler:
 ## The Static Lifetime
 
 - aka. `'static` => 讓 reference 可以存活在整個程式期間， eg, All string literals
+- Note that `'static` lifetime doesn’t mean that the value lived since the start of the program, but only that it lives to the end of the program. The past is simply not relevant
 
