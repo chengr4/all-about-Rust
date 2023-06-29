@@ -43,6 +43,8 @@ fn main() {
 
 ### References
 
+- The purpose of a reference is to use a value without transferring ownership.
+
 Rule of References:
 
 - At any given time, you can have either one mutable reference or any number of immutable references.
