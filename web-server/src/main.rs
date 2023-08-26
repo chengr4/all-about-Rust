@@ -22,6 +22,9 @@ fn handle_connection(mut stream: TcpStream) {
             .take_while(|line| !line.is_empty())
             .collect();
 
-    println!("請求：{:#?}", http_request);
+    let res = "HTTP/1.1 200 OK\r\n\r\n";
+    // print res as bytes
+    println!("{:?}", res.as_bytes()); // [72, 84, 84, 80, 47, 49, 46, 49, 32, 50, 48, 48, 32, 79, 75, 13, 10, 13, 10]
 
+    stream.write_all(res.as_bytes()).unwrap();
 }
