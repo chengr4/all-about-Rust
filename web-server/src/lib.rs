@@ -1,7 +1,7 @@
 use std::thread;
 
 pub struct ThreadPool {
-    threads: Vec<thread::JoinHandle<()>>,
+    workers: Vec<Worker>,
 }
 
 impl ThreadPool {
@@ -16,18 +16,34 @@ impl ThreadPool {
         // size should be greater than 0
         assert!(size > 0);
 
-        let mut threads = Vec::with_capacity(size);
+        let mut workers = Vec::with_capacity(size);
 
-        for _ in 0..size {
-            // 就產生些執行緒並儲存至向量
+        for id in 0..size {
+            // create some threads and store them in the vector
+            workers.push(Worker::new(id));
         }
 
-        ThreadPool { threads }
+        ThreadPool { workers }
     }
 
     pub fn execute<F>(&self, f: F)
     where
         F: FnOnce() + Send + 'static,
     {
+    }
+}
+
+// we want to create the threads and have them "wait for" code that we’ll send later. 
+// The standard library’s implementation of threads doesn’t include any way to do that
+pub struct Worker {
+    id: usize,
+    thread: thread::JoinHandle<()>,
+}
+
+impl Worker {
+    pub fn new(id: usize) -> Worker {
+        let thread = thread::spawn(|| {});
+
+        Worker {id , thread}
     }
 }
