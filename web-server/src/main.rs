@@ -1,17 +1,20 @@
+use std::fs;
 use std::{
     io::{prelude::*, BufReader},
-    net::{TcpListener, TcpStream}, sync::Arc,
+    net::{TcpListener, TcpStream}
 };
+use web_server::ThreadPool;
+
 fn main() {
-    // The function is called bind because, in networking, connecting to a port to listen to is known as “binding to a port.”
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let pool = ThreadPool::new(4);
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 
-        handle_connection(stream);
-    
-    // 當 stream 離開作用域並在迴圈結尾被釋放時，連線會在 drop 的實作中被關閉。
+        pool.execute(|| {
+            handle_connection(stream);
+        });
     }
 }
 
@@ -22,9 +25,12 @@ fn handle_connection(mut stream: TcpStream) {
             .take_while(|line| !line.is_empty())
             .collect();
 
-    let res = "HTTP/1.1 200 OK\r\n\r\n";
-    // print res as bytes
-    println!("{:?}", res.as_bytes()); // [72, 84, 84, 80, 47, 49, 46, 49, 32, 50, 48, 48, 32, 79, 75, 13, 10, 13, 10]
+            let status_line = "HTTP/1.1 200 OK";
+            let contents = fs::read_to_string("hello.html").unwrap();
+            let length = contents.len();
+        
+            let response =
+                format!("{status_line}\r\nContent-Length: {length}\r\n\r\n{contents}");
 
-    stream.write_all(res.as_bytes()).unwrap();
+    stream.write_all(response.as_bytes()).unwrap();
 }
