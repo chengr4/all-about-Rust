@@ -1,6 +1,6 @@
 use std::{sync::{mpsc, Arc, Mutex}, thread};
 
-struct Job;
+type Job = Box<dyn FnOnce() + Send + 'static>;
 
 pub struct ThreadPool {
     workers: Vec<Worker>,
@@ -21,6 +21,8 @@ impl ThreadPool {
 
         let (sender, receiver) = mpsc::channel();
 
+        // Arc is a type that allows us to share ownership of some data between threads safely
+        // Mutex is a type of smart pointer that allows us to lock a value while we’re using it
         let thread_receiver = Arc::new(Mutex::new(receiver));
 
         let mut workers = Vec::with_capacity(size);
@@ -37,6 +39,8 @@ impl ThreadPool {
     where
         F: FnOnce() + Send + 'static,
     {
+        let job = Box::new(f);
+        self.sender.send(job).unwrap();
     }
 }
 
