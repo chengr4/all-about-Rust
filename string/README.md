@@ -1,6 +1,6 @@
 # String
 
-- String literals
+- String literals: `&str`
 - `String`
 
 ## string literals
