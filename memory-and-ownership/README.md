@@ -44,6 +44,7 @@ fn main() {
 ### References
 
 - The purpose of a reference is to use a value without transferring ownership.
+- Rust's method call syntax automatically dereferences the reference when calling a method on it.
 
 Rule of References:
 
