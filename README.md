@@ -3,12 +3,13 @@
 - Core: traits and safe access to data
 - Package manager: cargo
 - Common indent: 4 spaces
-- Print line is called "marco" (see by exclamation)
+- Print line is called "marco" (by exclamation mark `!`)
 - Shadowing: Define a variable with same name but different data types 
 
 ---
 
 - [String](./string/)
+- [Control Flow](./control-flow/)
 - [Loop](./loop/)
 - [Variable](./variable/)
 - [Array](./array/)
@@ -21,12 +22,6 @@
 - [Lifetimes](./lifetimes/)
 - [Smart pointer](./smart-pointers/)
 - [Q/A](./qa/)
-
-Compile code:
-
-```sh
-rustc <file_name>
-```
 
 ## Cargo
 
@@ -41,58 +36,11 @@ cargo init
 Compile code:
 
 ```sh
+rustc <file_name>
 cargo r
 cargo run
 cargo build
 cargo build --release
-```
-
-## Conditions
-
-```rust
-fn main() {
-    let age: i32 = 8;
-    if (age >= 1) && (age <= 18) {
-      println!();
-    } else if (age == 21) || (age == 21) {
-
-    } else {
-
-    }
-}
-```
-
-```rust
-let mut my_age = 47;
-let can_vote = if my_age >= 18 {
-  true
-} else {
-
-}
-```
-
-match:
-
-```rust
-let age = 8;
-match age2 {
-  // range 1 to 18
-  1..=18 => printIn!(),
-  21 | 50 => printIn!(),
-  62..=i32::MAX => printIn!(),
-  // default case
-  _ => printIn!(),
-};
-
-use std::cmp::Ordering
-
-let my_age = 18;
-let voting_age = 18;
-match my_age.cmp(&voting_age){
-  Ordering::Less => printIn!(),
-  Ordering::Greater => printIn!(),
-  Ordering::Equal => printIn!(),
-};
 ```
 
 ## Researchable Resources
