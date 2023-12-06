@@ -103,3 +103,4 @@ match my_age.cmp(&voting_age){
 - [Mara Bos; Rust Atomics and Locks](https://marabos.nl/atomics/?fbclid=IwAR0MNn1M8Sty_Pqv2ONLpqX2lL-57d-QGTGGZwYEG0z2E5yO2DlY0_KGFdU)
 - [The Rust Programming Language](https://doc.rust-lang.org/stable/book/)
 - [Rust 程式設計語言](https://rust-lang.tw/book-tw/title-page.html)
+- [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
