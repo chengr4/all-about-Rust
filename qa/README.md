@@ -1,5 +1,9 @@
 # Q/A
 
+## Q: Why is `&s.repeat(3);` equal to `&(s.repeat(3));` rather than `(&s).repeat(3);`?
+
+A: The `.` operator has a higher precedence than `&` operator. So `&s.repeat(3)` is equal to `&(s.repeat(3))`.
+
 ## Q: What is exclamation mark (!) for?
 
 A: The exclamation mark is part of the syntax for Rust's macro system. Macros are a powerful feature that allow developers to define custom code transformations(?) that can be applied to source code before it is compiled.
