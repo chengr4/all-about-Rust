@@ -1,9 +1,6 @@
 # String
 
-- String literals: `&str`
-- `String`
-
-## string literals
+## string literals `&str`
 
 - 不可變的
 - 字串的數值是寫死在程式內的 => 編譯時期就知道內容
@@ -22,9 +19,12 @@
 Eg.
 
 ```rust
-let mut s = String::from("hello"); // String::from 的實作會請求分配一塊它需要的記憶體
+// String::from 的實作會請求分配一塊它需要的記憶體
+let mut s = String::from("hello"); 
 
-    s.push_str(", world!"); // push_str() 將字面值加到字串後面
+// push_str() 將字面值加到字串後面
+s.push_str(", world!"); 
 
-    println!("{}", s); // 這會印出 `hello, world!`
+// 這會印出 `hello, world!`
+println!("{}", s); 
 ```
