@@ -4,7 +4,7 @@
 
 A: In telegram group (2023.12),
 
-@Kan-Ru Chen:
+[@Kan-Ru Chen](https://github.com/kanru):
 
 - `&s` is from `Deref`, `s.as_str()` is `String`'s method.
 - Method 可以用在參數需要 `Fn` 的時候，例如 `Iterator::map` 就可以用 `x.iter().map(String::as_str)`，或是可以 chain `x.to_string().as_str().xxx`
