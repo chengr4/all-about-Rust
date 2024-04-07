@@ -21,6 +21,7 @@
 - [Traits](./trait/)
 - [Lifetimes](./lifetimes/)
 - [Smart pointer](./smart-pointers/)
+- [Macros](macros.md)
 - [Q/A](./qa/)
 
 ## Cargo
